@@ -1,0 +1,12 @@
+<div>EXO</div>
+
+<img [src] = "user.photo"/>
+
+<input [(ngModel)]="user.quote"/>
+<p>CITATION :{{user.quote}}</p>
+<p>{{user.name}}</p>
+<p>{{user.firstName}}</p>
+<p *ngIf="this.ishide">{{user.age}}</p>
+
+
+<button (click)="seeAge()">afficher/masquer mon age</button>
